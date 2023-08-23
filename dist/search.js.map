@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../bin/live-reload.js", "../src/search.ts"],
+  "sourcesContent": ["new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener('change', () => location.reload());\n", "const searchInput = document.querySelector(\"[w-element='search-input']\") as HTMLInputElement\nconst applyButton = document.querySelector(\"[w-element='apply-button']\") as HTMLButtonElement;\n\nsearchInput?.addEventListener('keyup', (e) => {\n    applyButton?.click()\n})\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,GAAG,iCAAsB,EAAE,iBAAiB,UAAU,MAAM,SAAS,OAAO,CAAC;;;ACA7F,MAAM,cAAc,SAAS,cAAc,4BAA4B;AACvE,MAAM,cAAc,SAAS,cAAc,4BAA4B;AAEvE,eAAa,iBAAiB,SAAS,CAAC,MAAM;AAC1C,iBAAa,MAAM;AAAA,EACvB,CAAC;",
+  "names": []
+}

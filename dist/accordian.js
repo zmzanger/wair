@@ -1,0 +1,1 @@
+"use strict";(()=>{var s=document.querySelectorAll("[faq-link]");s.forEach(e=>{e.addEventListener("click",()=>{let l=e.parentNode,t=e.querySelector(".icon-embed-small");t==null||t.classList.toggle("is-rotated"),l==null||l.classList.toggle("is-open")})});})();

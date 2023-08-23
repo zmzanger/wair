@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../bin/live-reload.js", "../src/accordian.ts"],
+  "sourcesContent": ["new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener('change', () => location.reload());\n", "const links = document.querySelectorAll<HTMLElement>('[faq-link]');\n\nlinks.forEach((e) => {\n    e.addEventListener('click', () => {\n        const parent = e.parentNode! as HTMLElement | null;\n        const arrow = e.querySelector('.icon-embed-small');\n\n        arrow?.classList.toggle('is-rotated');\n        parent?.classList.toggle('is-open');\n    });\n});\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,GAAG,iCAAsB,EAAE,iBAAiB,UAAU,MAAM,SAAS,OAAO,CAAC;;;ACA7F,MAAM,QAAQ,SAAS,iBAA8B,YAAY;AAEjE,QAAM,QAAQ,CAAC,MAAM;AACjB,MAAE,iBAAiB,SAAS,MAAM;AAC9B,YAAM,SAAS,EAAE;AACjB,YAAM,QAAQ,EAAE,cAAc,mBAAmB;AAEjD,aAAO,UAAU,OAAO,YAAY;AACpC,cAAQ,UAAU,OAAO,SAAS;AAAA,IACtC,CAAC;AAAA,EACL,CAAC;",
+  "names": []
+}

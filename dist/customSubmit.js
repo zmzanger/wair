@@ -1,0 +1,1 @@
+"use strict";(()=>{var t=document.querySelectorAll('[cl-form-submit="form"]');t==null||t.forEach(o=>{let e=o.querySelector('[cl-form-submit="button"]'),c=o.querySelector("form");console.log(e),e==null||e.addEventListener("click",function(l){l.preventDefault(),c&&c.submit()})});})();

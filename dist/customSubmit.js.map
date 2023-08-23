@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../bin/live-reload.js", "../src/customSubmit.ts"],
+  "sourcesContent": ["new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener('change', () => location.reload());\n", "const theForm = document.querySelectorAll<HTMLDivElement>('[cl-form-submit=\"form\"]');\n\ntheForm?.forEach((e) => {\n    const button = e.querySelector<HTMLButtonElement>('[cl-form-submit=\"button\"]');\n    const form = e.querySelector<HTMLFormElement>('form');\n\n    console.log(button);\n    button?.addEventListener(\"click\", function (event) {\n        event.preventDefault();\n        if (form) form.submit();\n    });\n});\n"],
+  "mappings": ";;;AAAA,MAAI,YAAY,GAAG,iCAAsB,EAAE,iBAAiB,UAAU,MAAM,SAAS,OAAO,CAAC;;;ACA7F,MAAM,UAAU,SAAS,iBAAiC,yBAAyB;AAEnF,WAAS,QAAQ,CAAC,MAAM;AACpB,UAAM,SAAS,EAAE,cAAiC,2BAA2B;AAC7E,UAAM,OAAO,EAAE,cAA+B,MAAM;AAEpD,YAAQ,IAAI,MAAM;AAClB,YAAQ,iBAAiB,SAAS,SAAU,OAAO;AAC/C,YAAM,eAAe;AACrB,UAAI;AAAM,aAAK,OAAO;AAAA,IAC1B,CAAC;AAAA,EACL,CAAC;",
+  "names": []
+}
